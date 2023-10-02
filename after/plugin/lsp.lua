@@ -16,14 +16,18 @@ require('mason-lspconfig').setup({
   },
 })
 
---local cmp = require'cmp'
---local cmp_select = {behavior = cmp.SelectBehavior.Select}
---local cmp_mappings = lsp_zero.defaults.cmp_mappings({
---    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
---    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
---    ['<CR>'] = cmp.mapping.confirm({ select = true }),
---    ["<C-Space>"] = cmp.mapping.complete(),
---})
+lsp_zero.set_preferences({
+    suggest_lsp_servers = false,
+    sign_icons = {
+        error = 'E',
+        warn = 'W',
+        hint = 'H',
+        info = 'I'
+    }
+})
+
+-- Setup CMP after lsp_zero
+
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
@@ -31,7 +35,21 @@ cmp.setup({
     completion = {
         completeopt = 'menu,menuone,noselect',
     },
-  mapping = cmp.mapping.preset.insert({
+    formatting = {
+        fields = {'abbr', 'menu', 'kind'},
+        format = function(entry, item)
+            local short_name = {
+                nvim_lsp = 'LSP',
+                nvim_lua = 'nvim'
+            }
+
+            local menu_name = short_name[entry.source.name] or entry.source.name
+
+            item.menu = string.format('[%s]', menu_name)
+            return item
+        end
+    },
+    mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
     ['<CR>'] = cmp.mapping.confirm({select = true}),
 
@@ -48,12 +66,3 @@ cmp.setup({
   })
 })
 
-lsp_zero.set_preferences({
-    suggest_lsp_servers = false,
-    sign_icons = {
-        error = 'E',
-        warn = 'W',
-        hint = 'H',
-        info = 'I'
-    }
-})
