@@ -18,3 +18,10 @@ vim.keymap.set('n', '<C-w><left>', '<C-w><')
 vim.keymap.set('n', '<C-w><right>', '<C-w>>')
 vim.keymap.set('n', '<C-w><up>', '<C-w>+')
 vim.keymap.set('n', '<C-w><down>', '<C-w>-')
+
+
+-- Clipboard
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>Y", "\"+Y")
+

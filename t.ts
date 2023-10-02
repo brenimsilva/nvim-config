@@ -6,8 +6,8 @@ const i = document.getElementById
 const el : HTMLDivElement = document.getElementById("teste") as HTMLDivElement;
 
 
-function fnteste(p1: number) {
-    console.log(p1);
+function fnteste(param: number) {
+   console.log(param); 
 }
 
 fnteste(1);

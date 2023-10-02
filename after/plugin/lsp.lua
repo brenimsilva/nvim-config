@@ -1,5 +1,4 @@
 local lsp_zero = require('lsp-zero')
-
 lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings
   -- to learn the available actions
@@ -30,11 +29,24 @@ lsp_zero.set_preferences({
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
-
 cmp.setup({
     completion = {
         completeopt = 'menu,menuone,noselect',
     },
+    snippet = {
+        expand = function(args)
+            require('luasnip').lsp_expand(args.body)
+        end
+    },
+    
+    sources = cmp.config.sources({
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' },
+    },
+    {
+        { name = 'buffer' },
+    }),
+    
     formatting = {
         fields = {'abbr', 'menu', 'kind'},
         format = function(entry, item)
@@ -66,3 +78,4 @@ cmp.setup({
   })
 })
 
+require ('luasnip.loaders.from_vscode').lazy_load()
