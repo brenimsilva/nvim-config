@@ -1,5 +1,9 @@
 return require('packer').startup(function(use)
-
+   use {
+       'svrana/neosolarized.nvim',
+        requires = { 'tjdevries/colorbuddy.nvim' }
+    }
+    use 'norcalli/nvim-colorizer.lua'
     use 'tpope/vim-commentary'
     use 'theprimeagen/harpoon'
     use 'wbthomason/packer.nvim'
