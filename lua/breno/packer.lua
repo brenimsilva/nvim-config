@@ -1,5 +1,6 @@
 return require('packer').startup(function(use)
 
+    use 'tpope/vim-commentary'
     use 'theprimeagen/harpoon'
     use 'wbthomason/packer.nvim'
     use {
