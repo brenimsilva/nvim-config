@@ -1,4 +1,5 @@
 require("breno.remap")
 require("breno.packer")
 require("breno.set")
+require("breno.highlights")
 print("requires successfully")
