@@ -11,7 +11,8 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-
+    use 'windwp/nvim-autopairs'
+    use 'windwp/nvim-ts-autotag'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         requires = {{'nvim-lua/plenary.nvim'}}
