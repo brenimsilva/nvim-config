@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -89,45 +84,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-nvim-lua"] = {
-    loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lua",
-    url = "https://github.com/hrsh7th/cmp-nvim-lua"
-  },
-  ["cmp-path"] = {
-    loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
-  },
-  cmp_luasnip = {
-    loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
-  },
   ["colorbuddy.nvim"] = {
     loaded = true,
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["lsp-zero.nvim"] = {
+  ["lspkind-nvim"] = {
     loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
+    url = "https://github.com/nvimdev/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -214,11 +189,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
-  },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 

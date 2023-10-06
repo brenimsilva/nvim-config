@@ -12,3 +12,8 @@ function fnteste(param: number) {
 
 fnteste(1);
 
+
+
+function teste() {
+
+}
