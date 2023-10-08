@@ -12,3 +12,11 @@ function fnteste(param: number) {
 
 fnteste(1);
 
+function asd() {
+    const teste = document.getElementById("element");
+}
+
+function name(params:type) {
+    
+}
+

@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use {
         'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        requires = { 'nvim-tree/nvim-web-devicons'}
     }
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
@@ -18,21 +18,12 @@ return require('packer').startup(function(use)
         requires = {{'nvim-lua/plenary.nvim'}}
     }
 
-    -- use({
-    --     'rose-pine/neovim',
-    --     as = 'rose-pine',
-    --     config = function()
-    --         vim.cmd('colorscheme rose-pine')
-    --     end
-    -- })
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('mbbill/undotree')
-    use('tpope/vim-fugitive')
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
-			--- Uncomment these if you want to manage LSP servers from neovim
 
 			-- LSP Support
             -- DEVASLIFE
