@@ -8,11 +8,13 @@ return require('packer').startup(function(use)
     use 'tpope/vim-commentary'
     use 'theprimeagen/harpoon'
     use 'wbthomason/packer.nvim'
+    use 'folke/lsp-colors.nvim'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons'}
     }
     use 'windwp/nvim-autopairs'
+    use 'onsails/lspkind-nvim'
     use 'windwp/nvim-ts-autotag'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',

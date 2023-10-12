@@ -1,6 +1,7 @@
 const la = document.getElementById('id') as HTMLButtonElement;
 const lx = document.getElementById("IDTESTE") as HTMLButtonElement;
 const i = document.getElementById
+        
 
 
 const el : HTMLDivElement = document.getElementById("teste") as HTMLDivElement;
@@ -19,4 +20,3 @@ function asd() {
 function name(params:type) {
     
 }
-

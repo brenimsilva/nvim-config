@@ -119,10 +119,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
