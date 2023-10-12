@@ -18,10 +18,14 @@ require('mason-lspconfig').setup({
 lsp_zero.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {
-        error = 'E',
-        warn = 'W',
-        hint = 'H',
-        info = 'I'
+        -- error = 'E',a
+        -- warn = 'W',
+        -- hint = 'H',
+        -- info = 'I'
+        error = '✘',
+        warn = '▲',
+        hint = '⚑',
+        info = '»'
     }
 })
 
