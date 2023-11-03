@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
 			-- LSP Support
             -- DEVASLIFE
             {'jose-elias-alvarez/null-ls.nvim'},
-            {'glepnir/lspsaga.nvim'},
+            -- {'glepnir/lspsaga.nvim'},
 			{'neovim/nvim-lspconfig'},
 
             {'williamboman/mason.nvim'},
