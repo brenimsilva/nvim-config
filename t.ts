@@ -1,8 +1,6 @@
 const la = document.getElementById('id') as HTMLButtonElement;
 const lx = document.getElementById("IDTESTE") as HTMLButtonElement;
 const i = document.getElementById
-        
-
 
 const el : HTMLDivElement = document.getElementById("teste") as HTMLDivElement;
 
@@ -13,10 +11,5 @@ function fnteste(param: number) {
 
 fnteste(1);
 
-function asd() {
-    const teste = document.getElementById("element");
-}
 
-function name(params:type) {
-    
-}
+
