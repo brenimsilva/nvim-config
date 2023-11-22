@@ -88,3 +88,17 @@ lualine.setup {
   extensions = { 'fugitive' }
 }
 
+
+ vim.cmd.colorscheme("tokyonight")
+ require("tokyonight").setup({
+    transparent = true,
+ })
+
+function c()
+    vim.cmd.colorscheme("tokyonight")
+    require("tokyonight").setup({
+        transparent = true,
+    })
+ end
+
+ c()

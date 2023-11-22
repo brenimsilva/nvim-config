@@ -10,6 +10,3 @@ function fnteste(param: number) {
 }
 
 fnteste(1);
-
-
-

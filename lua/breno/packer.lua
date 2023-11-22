@@ -3,6 +3,8 @@ return require('packer').startup(function(use)
        'svrana/neosolarized.nvim',
         requires = { 'tjdevries/colorbuddy.nvim' }
     }
+    use 'folke/tokyonight.nvim'
+    -- use 'craftzdog/solarized-osaka.nvim'
     use 'ryanoasis/vim-devicons'
     use 'norcalli/nvim-colorizer.lua'
     use 'tpope/vim-commentary'
