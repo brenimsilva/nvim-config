@@ -204,15 +204,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["solarized-osaka.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\solarized-osaka.nvim",
-    url = "https://github.com/craftzdog/solarized-osaka.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\breno\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,

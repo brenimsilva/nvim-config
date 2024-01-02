@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('mbbill/undotree')
 
+    use {'akinsho/toggleterm.nvim', tag = '*'}
+
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
