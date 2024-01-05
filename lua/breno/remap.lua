@@ -25,4 +25,9 @@ vim.keymap.set('n', '<C-w><down>', '<C-w>-')
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
+-- vnoremap <C-k> :m-2<CR>gv=gv
+-- vnoremap <C-j> :m'>+<CR>gv=gv
+--
+vim.keymap.set("v", "<C-k>", ":m-2<CR>gv=gv")
+vim.keymap.set("v", "<C-j>", ":m'>+<CR>gv=gv")
 
