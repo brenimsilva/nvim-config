@@ -36,3 +36,7 @@ auto imports
 go to definition
 
 
+#Linux
+On linux use
+```sudo apt-get install build-essential```
+
